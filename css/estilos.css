@@ -1,0 +1,350 @@
+.titulo-color {
+    color:blueviolet;
+    width: 100 px;
+    height: 100 px; 
+}
+#uno {
+    background-image: linear-gradient(pink, cyan );
+    animation-name: texto;
+    animation-duration: 3s;
+    
+}
+.parrafo-color {
+    color:rgb(102, 48, 44);
+}
+#dos {
+    background-color: blueviolet;
+}
+.fondo-color {
+    background-color: coral;
+}
+
+@font-face{
+    font-family:"lato" ;
+    src: url(/bootstrap-LOCAL/media/lato/Lato-BoldItalic.ttf);
+}
+h2 {
+    font-family:"lato" ;
+
+}
+@font-face{
+    font-family:"lato" ;
+    src: url(/bootstrap-LOCAL/media/lato/Lato-Italic.ttf);
+}
+footer{
+    font-family: "lato";
+}
+
+/*estilos-en-karate.html*/
+.estilo-titulo{
+    color:rgb(158, 113, 24);
+
+}
+#tres{
+    border-style: dashed;
+    border-color: rgb(211, 210, 208);
+    background-color: rgb(133, 199, 131);
+    border-style: groove;
+    background-image: linear-gradient(rgb(82, 5, 5), rgb(0, 110, 255));
+    animation-name: texto;
+    animation-duration: 3s;
+}
+.color{
+    background-color: rgb(197, 197, 74);
+}
+/*estilos-en-boxeo.html*/
+.titulo01{
+    background-color: rgb(144, 214, 208);
+
+}
+#cuatro{
+    border-style: groove;
+    background-image: linear-gradient(red, cyan);
+    animation-name: texto;
+    animation-duration: 3s;
+}
+#main{
+    font-family:"lato";
+    src: url(/bootstrap-LOCAL/media/lato/Lato-Italic.ttf);   
+}
+/*estilos-en-taekwondo.html*/
+.title-c{
+    background-color: rgb(61, 87, 61);
+}
+.h1-taek{
+    border-style: groove;
+    border-color: black;
+    background-color: darkgray;
+}
+.p-taek{
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+    background-color: black;
+}
+#dies {
+    border-style: groove;
+    background-image: linear-gradient(rgb(250, 248, 248), cyan);
+    animation-name: texto;
+    animation-duration: 3s;
+}
+/*estilos-en-judo.html*/
+.body-ju{
+    background-color: rgb(199, 184, 46);
+}
+.title-ju{
+    color: chocolate;
+}
+#cinco{
+    border-style: double;
+    border-color: black;
+    background-color: cyan;
+    border-style: groove;
+    background-image: linear-gradient(rgb(0, 255, 136), rgb(140, 0, 255));
+    animation-name: texto;
+    animation-duration: 3s;
+}
+.p-ju{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+/*estilos-en-kickboxing-html*/
+.body-kick{
+    background-color: rgb(95, 179, 207);
+}
+.h1-kick{
+    color:darkmagenta
+}
+#seis{
+    border-style: solid;
+    border-color: black;
+    background-color: lightgoldenrodyellow;
+    border-style: groove;
+    background-image: linear-gradient(rgb(241, 238, 238), rgb(187, 166, 45));
+    animation-name: texto;
+    animation-duration: 3s;
+}
+
+.p-kick{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: aliceblue;
+}
+/*estilos-en-muaythai.html*/
+.body-muay{
+    background-color: rgb(201, 47, 47);
+}
+.h1-muay{
+    color: azure;
+}
+#siete{
+    border-style: double;
+    border-color: azure;
+    background-color: darkgoldenrod;
+    border-style: groove;
+    background-image: linear-gradient(rgb(255, 145, 0), rgb(255, 251, 0));
+    animation-name: texto;
+    animation-duration: 3s;
+}
+.p-muay{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: azure;
+}
+#nueve{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*estilos-flex*/
+nav{
+    background-color: rgb(28, 109, 175);
+    padding: 10px;
+}
+ul {
+    list-style-type: none;
+    animation-name: x;
+    animation-duration: 3s;
+}
+ul li {
+    margin-left: 10px;
+    background-color: rgb(236, 229, 229);
+    padding: 5px;
+    color: aliceblue;
+}
+.menu-flex{
+    display: flex;    
+}
+    
+.section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: start;
+    
+    
+}
+.section-s {
+    background-color: rgb(5, 5, 5);
+}
+.footer-judo {
+    background-color: black;
+    font-family: cursive;
+    color: aliceblue;
+    border-style:dashed;
+}
+/*grid*/
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.body{
+    width: 100%;
+    width: 100vh;
+}
+.border{
+    border: solid 1px black;
+}
+#grid-area{
+    display: grid;
+/*estructura-de-grid-area*/ 
+    grid-template-areas:
+/*3-columnas-2-filas*/    
+    "menu cabeza palabras"
+    "menu pie pie" 
+    ;
+    grid-template-rows: 1fr ;
+    grid-row-gap: 5px;
+    
+}
+/*nombre-de-las-areas*/
+header {
+    grid-area: cabeza;
+
+}
+ footer {
+    grid-area: pie;
+ }
+ 
+ nav {
+    grid-area: menu;
+}
+main {
+    grid-area: palabras;
+}
+/*grid-en-pagina"boxeo"*/
+  
+.border02{
+    border: solid 1px black;
+}
+
+#grid-area02{
+    display: grid;
+    grid-template-areas:
+        "cabeza menu"
+        "cabeza palabras"
+        "cabeza pie"             
+    ;
+    grid-template-rows: 1fr ;
+    grid-row-gap: 5px;
+
+}
+    header {
+        grid-area: cabeza;     
+}
+     footer {
+        grid-area: pie;
+   
+}
+     nav {
+        grid-area: menu;
+}
+    main{
+        grid-area: palabras;
+    }
+/*aplicando responsive*/
+/*smartphone*/
+@media (max-width: 480px){
+    header, nav, footer {
+        padding: 10px;
+    }
+    #grid-area02{
+        display: grid;
+        grid-template-areas:
+            "cabeza menu"
+            "cabeza palabras"
+            "cabeza pie"             
+        ;
+        grid-template-columns: 58% auto 50%;
+        grid-template-rows: 1fr;
+    
+    }
+        header {
+            grid-area: cabeza;     
+    }
+         footer {
+            grid-area: pie;
+       
+    }
+         nav {
+            grid-area: menu;
+    }
+        main{
+            grid-area: palabras;
+        }
+   
+    }
+    .ninja {
+        display: block;
+        width: 100%;
+    }
+/*desktop */
+@media (min-width: 1024px){
+    header, nav, footer{
+        padding: 10 px;
+    }
+    #grid-area02{
+        display: grid;
+        grid-template-areas:
+            "cabeza menu"
+            "cabeza palabras"
+            "cabeza pie"             
+        ;
+        grid-template-columns: 58% auto 50%;
+        grid-template-rows: 1fr;
+    
+    }
+        header {
+            grid-area: cabeza;     
+    }
+         footer {
+            grid-area: pie;
+       
+    }
+         nav {
+            grid-area: menu;
+    }
+        main{
+            grid-area: palabras;
+    }
+
+    }/*animaciones*/
+    
+    @keyframes texto {
+        from/*inicio*/{
+            transform: rotateX(100px);
+            opacity: 0;
+            
+            
+    }
+    
+    to/*final*/{
+        transform: rotateX(0);
+        opacity: 1;
+
+}
+    
+}  
+/*animaciones en bootstrap*/
+
+  
+
